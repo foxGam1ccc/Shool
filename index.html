@@ -1,0 +1,2706 @@
+<div class="vb-k7d" id="vb-k7d-root" data-vibeblock-unique-section="yes">
+
+  <section class="vb-k7d__head" data-section-name="Шапка расписания" aria-labelledby="vb-k7d-title">
+    <div class="vb-k7d__wrap">
+      <div class="vb-k7d__headtop">
+        <p class="vb-k7d__badge"><span class="vb-k7d__badge-dot" aria-hidden="true"></span>МБОУ СОШ N12 · расписание уроков</p>
+        <p class="vb-k7d__clock">Обновлено сегодня, 07:50 · <span id="vb-k7d-clock">сейчас 20:37</span></p>
+      </div>
+      <h1 class="vb-k7d__title t-title t-title_xl" id="vb-k7d-title">Расписание уроков</h1>
+      <p class="vb-k7d__descr t-text t-text_lg">Выберите класс, подгруппу и день — от 5а до 9г. Показано расписание на сегодня и ближайшую неделю; изменения вступают в силу сразу.</p>
+      <ul class="vb-k7d__facts">
+        <li class="vb-k7d__fact"><span class="vb-k7d__ico vb-k7d__ico--cal" aria-hidden="true"></span>Классы 5–9 · подгруппы а, б, в, г</li>
+        <li class="vb-k7d__fact"><span class="vb-k7d__ico vb-k7d__ico--clock" aria-hidden="true"></span>Обновление каждое утро до 08:00</li>
+        <li class="vb-k7d__fact"><span class="vb-k7d__ico vb-k7d__ico--pin" aria-hidden="true"></span>Урай,МБОУ СОШ N12</li>
+      </ul>
+    </div>
+  </section>
+
+  <nav class="vb-k7d__bar" aria-label="Выбор класса и подгруппы" data-section-name="Выбор класса">
+    <div class="vb-k7d__wrap vb-k7d__barinner">
+
+      <div class="vb-k7d__pickgroup">
+        <p class="vb-k7d__barlabel" id="vb-k7d-gradelabel">Класс</p>
+        <div class="vb-k7d__classes" role="group" aria-labelledby="vb-k7d-gradelabel">
+          <button class="vb-k7d__classbtn" type="button" data-act="grade" data-grade="5" aria-pressed="false" aria-label="5 класс">5</button>
+          <button class="vb-k7d__classbtn" type="button" data-act="grade" data-grade="6" aria-pressed="false" aria-label="6 класс">6</button>
+          <button class="vb-k7d__classbtn" type="button" data-act="grade" data-grade="7" aria-pressed="false" aria-label="7 класс">7</button>
+          <button class="vb-k7d__classbtn" type="button" data-act="grade" data-grade="8" aria-pressed="false" aria-label="8 класс">8</button>
+          <button class="vb-k7d__classbtn" type="button" data-act="grade" data-grade="9" aria-pressed="false" aria-label="9 класс">9</button>
+        </div>
+      </div>
+
+      <div class="vb-k7d__pickgroup">
+        <p class="vb-k7d__barlabel" id="vb-k7d-letterlabel">Подгруппа</p>
+        <div class="vb-k7d__classes" role="group" aria-labelledby="vb-k7d-letterlabel">
+          <button class="vb-k7d__classbtn vb-k7d__classbtn--letter" type="button" data-act="letter" data-letter="а" aria-pressed="false" aria-label="Подгруппа а">а</button>
+          <button class="vb-k7d__classbtn vb-k7d__classbtn--letter" type="button" data-act="letter" data-letter="б" aria-pressed="false" aria-label="Подгруппа б">б</button>
+          <button class="vb-k7d__classbtn vb-k7d__classbtn--letter" type="button" data-act="letter" data-letter="в" aria-pressed="false" aria-label="Подгруппа в">в</button>
+          <button class="vb-k7d__classbtn vb-k7d__classbtn--letter" type="button" data-act="letter" data-letter="г" aria-pressed="false" aria-label="Подгруппа г">г</button>
+        </div>
+      </div>
+
+      <div class="vb-k7d__tools">
+        <button class="vb-k7d__editbtn" id="vb-k7d-editbtn" type="button">
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2"></rect><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"></path></svg>
+          Вход для админа
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="vb-k7d__main" data-section-name="Расписание на сегодня" aria-labelledby="vb-k7d-daytitle">
+    <div class="vb-k7d__wrap">
+
+      <div class="vb-k7d__editbar" id="vb-k7d-editbar" hidden="">
+        <p class="vb-k7d__editstatus">Режим правки: уроки может менять только администратор. Правки действуют до перезагрузки страницы.</p>
+        <div class="vb-k7d__editactions">
+          <button class="vb-k7d__btnsm vb-k7d__btnsm--accent" type="button" data-eact="editor">Редактор дня</button>
+          <button class="vb-k7d__btnsm" type="button" data-eact="export">Выгрузить JSON</button>
+          <button class="vb-k7d__btnsm" type="button" data-eact="import">Загрузить JSON</button>
+          <button class="vb-k7d__btnsm" type="button" data-eact="reset">Сбросить правки</button>
+          <button class="vb-k7d__btnsm" type="button" data-eact="logout">Выйти</button>
+        </div>
+        <p class="vb-k7d__editmsg" id="vb-k7d-editmsg" role="status" aria-live="polite"></p>
+        <input type="file" id="vb-k7d-file" accept="application/json,.json" hidden="">
+      </div>
+
+      <div class="vb-k7d__daynav" id="vb-k7d-daynav" role="group" aria-label="Выбор дня"></div>
+
+      <header class="vb-k7d__weekhead">
+        <h2 class="vb-k7d__weektitle" id="vb-k7d-daytitle">—</h2>
+        <p class="vb-k7d__weeksub" id="vb-k7d-daysub">—</p>
+      </header>
+
+      <div class="vb-k7d__tables" id="vb-k7d-board"></div>
+      <p class="vb-k7d__sr" id="vb-k7d-status" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section class="vb-k7d__notes" data-section-name="Обозначения и контакты" aria-labelledby="vb-k7d-notes-title">
+    <div class="vb-k7d__wrap">
+      <h2 class="vb-k7d__notestitle t-heading t-heading_sm" id="vb-k7d-notes-title">Как читать расписание</h2>
+      <div class="vb-k7d__notesgrid">
+
+        <div class="vb-k7d__notecol">
+          <h3 class="vb-k7d__notecoltitle t-heading t-heading_xs">Обозначения</h3>
+          <ul class="vb-k7d__legend" id="vb-k7d-legend"></ul>
+          <button class="vb-k7d__legadd" id="vb-k7d-legendadd" type="button" data-act="leg-add" hidden="">＋ Добавить обозначение</button>
+        </div>
+
+        <div class="vb-k7d__notecol">
+          <h3 class="vb-k7d__notecoltitle t-heading t-heading_xs">Уроки</h3>
+          <p class="vb-k7d__notetext t-text t-text_sm">Строка таблицы — один урок: номер, время, предмет, кабинет и учитель. Текущий урок отмечен статусом «Идёт». Классы разделены на четыре подгруппы: например, 7а, 7б, 7в, 7г. Расписание показано на сегодня и шесть дней вперёд: нужный день выбирается кнопками над таблицей.</p>
+        </div>
+
+        <div class="vb-k7d__notecol">
+          <h3 class="vb-k7d__notecoltitle t-heading t-heading_xs">Учебная часть</h3>
+          <ul class="vb-k7d__contacts">
+            <li class="vb-k7d__contact"><span class="vb-k7d__ico vb-k7d__ico--pin" aria-hidden="true"></span>Урай,МБОУ СОШ N12</li>
+            <li class="vb-k7d__contact"><span class="vb-k7d__ico vb-k7d__ico--phone" aria-hidden="true"></span><a class="vb-k7d__link" href="tel:+78125551490">+7 812 555-14-90</a></li>
+            <li class="vb-k7d__contact"><span class="vb-k7d__ico vb-k7d__ico--mail" aria-hidden="true"></span><a class="vb-k7d__link" href="mailto:office@meridian.lycee">office@meridian.lycee</a></li>
+            <li class="vb-k7d__contact"><span class="vb-k7d__ico vb-k7d__ico--info" aria-hidden="true"></span>Звонки в учебную часть: пн–чт, 08:00–16:00</li>
+          </ul>
+        </div>
+
+      </div>
+      <p class="vb-k7d__disclaimer">Расписание может меняться: замены и отмены отмечаются статусом «Отменён». При сомнениях уточняйте информацию в учебной части по телефону.</p>
+    </div>
+  </section>
+
+  <div class="vb-k7d__modal" id="vb-k7d-modal" hidden="">
+    <div class="vb-k7d__backdrop" data-close="1"></div>
+    <div class="vb-k7d__dialog" role="dialog" aria-modal="true" aria-label="Редактирование расписания">
+      <button class="vb-k7d__close" type="button" data-close="1" aria-label="Закрыть окно">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+      </button>
+
+      <form class="vb-k7d__pane vb-k7d__pane--login" id="vb-k7d-loginpane" novalidate="">
+        <h3 class="vb-k7d__dlgtitle">Вход для администратора</h3>
+        <p class="vb-k7d__dlgtext">Уроки может редактировать только сотрудник лицея. Публичная часть страницы остаётся доступной всем.</p>
+        <label class="vb-k7d__field">
+          <span>Логин</span>
+          <input class="vb-k7d__input" id="vb-k7d-user" type="text" autocomplete="username" required="">
+        </label>
+        <div class="vb-k7d__field">
+          <span>Пароль</span>
+          <div class="vb-k7d__passwrap">
+            <input class="vb-k7d__input" id="vb-k7d-pass" type="password" autocomplete="current-password" required="">
+            <button class="vb-k7d__passeye" id="vb-k7d-passeye" type="button" aria-label="Показать пароль" aria-pressed="false">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"></path><circle cx="12" cy="12" r="2.5"></circle></svg>
+            </button>
+          </div>
+        </div>
+        <p class="vb-k7d__formerr" id="vb-k7d-loginerr" role="alert" hidden="">Неверный логин или пароль. Проверьте раскладку и попробуйте снова.</p>
+        <div class="vb-k7d__dlgactions">
+          <button class="t-btnflex t-btnflex_md" type="submit"><span class="t-btnflex__text">Войти</span></button>
+        </div>
+        <p class="vb-k7d__hint">Демо-доступ: admin / meridian2025</p>
+      </form>
+
+      <form class="vb-k7d__pane" id="vb-k7d-edpane" novalidate="" hidden="">
+        <h3 class="vb-k7d__dlgtitle" id="vb-k7d-edtitle">Редактор расписания</h3>
+        <p class="vb-k7d__dlgtext" id="vb-k7d-edtext">—</p>
+
+        <div class="vb-k7d__edauto">
+          <label class="vb-k7d__autohead">
+            <input type="checkbox" id="vb-k7d-autoon">
+            Автообозначения: отмечать статусы уроков автоматически по времени
+          </label>
+          <p class="vb-k7d__autotext">Когда функция включена, таблица сама ставит «Идёт», «Завершён» и «Предстоит». Подписи можно переименовать — они обновят и список обозначений внизу страницы. «Отменён» ставится вручную галочкой в строке урока.</p>
+          <div class="vb-k7d__autogrid">
+            <label class="vb-k7d__autofield"><span>Идёт</span><input class="vb-k7d__input" id="vb-k7d-auto-live" type="text" maxlength="24"></label>
+            <label class="vb-k7d__autofield"><span>Завершён</span><input class="vb-k7d__input" id="vb-k7d-auto-done" type="text" maxlength="24"></label>
+            <label class="vb-k7d__autofield"><span>Предстоит</span><input class="vb-k7d__input" id="vb-k7d-auto-next" type="text" maxlength="24"></label>
+            <label class="vb-k7d__autofield"><span>Отменён</span><input class="vb-k7d__input" id="vb-k7d-auto-off" type="text" maxlength="24"></label>
+          </div>
+        </div>
+
+        <div class="vb-k7d__edrows" id="vb-k7d-edrows"></div>
+        <p class="vb-k7d__formerr" id="vb-k7d-ederr" role="alert" hidden="">Проверьте строки: номер урока 1–12, время в формате ЧЧ:ММ, непустой предмет и длительность от 15 до 120 минут.</p>
+        <div class="vb-k7d__dlgactions">
+          <button class="t-btnflex t-btnflex_md" type="submit"><span class="t-btnflex__text">Сохранить расписание</span></button>
+          <button class="vb-k7d__btnsm" type="button" id="vb-k7d-edadd">＋ Урок</button>
+          <button class="vb-k7d__btnsm" type="button" data-close="1">Отмена</button>
+        </div>
+      </form>
+
+      <form class="vb-k7d__pane" id="vb-k7d-evpane" novalidate="" hidden="">
+        <h3 class="vb-k7d__dlgtitle" id="vb-k7d-evdlgtitle">Урок</h3>
+        <p class="vb-k7d__dlgtext" id="vb-k7d-evdlgtext">Измените данные урока — они сразу появятся в расписании.</p>
+        <div class="vb-k7d__row2">
+          <label class="vb-k7d__field">
+            <span>Номер урока</span>
+            <select class="vb-k7d__input" id="vb-k7d-f-num" required="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </label>
+          <label class="vb-k7d__field">
+            <span>Время начала</span>
+            <input class="vb-k7d__input" id="vb-k7d-f-time" type="text" inputmode="numeric" maxlength="5" placeholder="ЧЧ:ММ" required="">
+          </label>
+        </div>
+        <label class="vb-k7d__field">
+          <span>Предмет</span>
+          <input class="vb-k7d__input" id="vb-k7d-f-subj" type="text" maxlength="60" required="">
+        </label>
+        <div class="vb-k7d__row2">
+          <label class="vb-k7d__field">
+            <span>Учитель</span>
+            <input class="vb-k7d__input" id="vb-k7d-f-teacher" type="text" maxlength="60">
+          </label>
+          <label class="vb-k7d__field">
+            <span>Кабинет</span>
+            <input class="vb-k7d__input" id="vb-k7d-f-room" type="text" maxlength="40">
+          </label>
+        </div>
+        <div class="vb-k7d__row2">
+          <label class="vb-k7d__field">
+            <span>Длительность, мин</span>
+            <input class="vb-k7d__input" id="vb-k7d-f-dur" type="number" min="15" max="120" step="5" required="">
+          </label>
+          <label class="vb-k7d__field">
+            <span>Статус</span>
+            <select class="vb-k7d__input" id="vb-k7d-f-status">
+              <option value="">Запланирован</option>
+              <option value="off">Отменён</option>
+            </select>
+          </label>
+        </div>
+        <p class="vb-k7d__formerr" id="vb-k7d-everr" role="alert" hidden="">Заполните номер урока, время, предмет и длительность (от 15 до 120 минут).</p>
+        <div class="vb-k7d__dlgactions">
+          <button class="t-btnflex t-btnflex_md" type="submit"><span class="t-btnflex__text" id="vb-k7d-evsubmit">Сохранить</span></button>
+          <button class="vb-k7d__btnsm vb-k7d__btnsm--danger" type="button" id="vb-k7d-evdel">Удалить</button>
+          <button class="vb-k7d__btnsm" type="button" data-close="1">Отмена</button>
+        </div>
+      </form>
+
+      <form class="vb-k7d__pane" id="vb-k7d-legpane" novalidate="" hidden="">
+        <h3 class="vb-k7d__dlgtitle" id="vb-k7d-legdlgtitle">Обозначение</h3>
+        <p class="vb-k7d__dlgtext">Текст попадает в список «Обозначения» внизу страницы.</p>
+        <label class="vb-k7d__field">
+          <span>Название</span>
+          <input class="vb-k7d__input" id="vb-k7d-l-title" type="text" maxlength="40" required="">
+        </label>
+        <label class="vb-k7d__field">
+          <span>Описание</span>
+          <input class="vb-k7d__input" id="vb-k7d-l-descr" type="text" maxlength="120" required="">
+        </label>
+        <label class="vb-k7d__field">
+          <span>Цвет метки</span>
+          <select class="vb-k7d__input" id="vb-k7d-l-color">
+            <option value="live">Зелёный (идёт)</option>
+            <option value="done">Серый (завершено)</option>
+            <option value="off">Красный (отменено)</option>
+            <option value="">Нейтральный (предстоит)</option>
+          </select>
+        </label>
+        <p class="vb-k7d__formerr" id="vb-k7d-legrerr" role="alert" hidden="">Укажите название и описание обозначения.</p>
+        <div class="vb-k7d__dlgactions">
+          <button class="t-btnflex t-btnflex_md" type="submit"><span class="t-btnflex__text">Сохранить</span></button>
+          <button class="vb-k7d__btnsm vb-k7d__btnsm--danger" type="button" id="vb-k7d-legdel">Удалить</button>
+          <button class="vb-k7d__btnsm" type="button" data-close="1">Отмена</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+<style>
+.vb-k7d,
+.vb-k7d * { box-sizing: border-box; }
+.vb-k7d input,
+.vb-k7d textarea,
+.vb-k7d select { font: inherit; }
+.vb-k7d [hidden] { display: none !important; }
+
+.vb-k7d {
+  --vb-k7d-ink: #0e1114;
+  --vb-k7d-band: #0a0d10;
+  --vb-k7d-panel: #141a20;
+  --vb-k7d-panel-2: #1a2129;
+  --vb-k7d-line: rgba(255, 255, 255, 0.10);
+  --vb-k7d-line-soft: rgba(255, 255, 255, 0.06);
+  --vb-k7d-text: #e9ecef;
+  --vb-k7d-muted: #9ba6b0;
+  --vb-k7d-accent: #ffb020;
+  --vb-k7d-accent-soft: rgba(255, 176, 32, 0.12);
+  --vb-k7d-live: #3ed598;
+  --vb-k7d-off: #ff7a5c;
+  --vb-k7d-z-backdrop: 80;
+  --vb-k7d-z-modal: 90;
+  border-top: 4px solid var(--vb-k7d-accent);
+  background-color: var(--vb-k7d-ink);
+  color: var(--vb-k7d-text);
+  font-family: var(--t-text-font, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+.vb-k7d__wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.vb-k7d__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Шапка ---------- */
+
+.vb-k7d__head {
+  padding: 34px 0 26px;
+  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.022) 0 1px, transparent 1px 4px);
+}
+
+.vb-k7d__headtop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  margin-bottom: 20px;
+}
+
+.vb-k7d__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 6px 12px 6px 10px;
+  border: 1px solid rgba(255, 176, 32, 0.4);
+  border-radius: 999px;
+  background-color: var(--vb-k7d-accent-soft);
+  color: var(--vb-k7d-accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.vb-k7d__badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--vb-k7d-accent);
+  flex: none;
+}
+
+.vb-k7d__clock {
+  margin: 0;
+  color: var(--vb-k7d-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.vb-k7d__title {
+  margin: 0 0 14px;
+  font-family: var(--t-headline-font, var(--t-text-font, system-ui, sans-serif));
+  font-size: clamp(2.1rem, 1.5rem + 2.6vw, 3.5rem);
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.vb-k7d__descr {
+  margin: 0 0 22px;
+  max-width: 64ch;
+  color: var(--vb-k7d-muted);
+  text-wrap: pretty;
+}
+
+.vb-k7d__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vb-k7d__fact {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--vb-k7d-muted);
+  font-size: 13.5px;
+}
+
+.vb-k7d__ico {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex: none;
+  background-color: currentColor;
+  opacity: 0.9;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+.vb-k7d__ico--cal { -webkit-mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/calendar_date_schedule.svg); mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/calendar_date_schedule.svg); }
+.vb-k7d__ico--clock { -webkit-mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/watch_clock_time.svg); mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/watch_clock_time.svg); }
+.vb-k7d__ico--pin { -webkit-mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/marker_location_place_where.svg); mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/marker_location_place_where.svg); }
+.vb-k7d__ico--phone { -webkit-mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/phone_contact_call.svg); mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/phone_contact_call.svg); }
+.vb-k7d__ico--mail { -webkit-mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/envelope_e-mail_mail_post_contact_send.svg); mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/envelope_e-mail_mail_post_contact_send.svg); }
+.vb-k7d__ico--info { -webkit-mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/plan_schedule_program.svg); mask-image: url(https://static.tildacdn.pub/lib/icons/tilda/plan_schedule_program.svg); }
+
+/* ---------- Панель выбора класса ---------- */
+
+.vb-k7d__bar {
+  border-top: 1px solid var(--vb-k7d-line);
+  border-bottom: 1px solid var(--vb-k7d-line);
+  background-color: rgba(14, 17, 20, 0.94);
+}
+
+.vb-k7d__barinner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.vb-k7d__pickgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.vb-k7d__barlabel {
+  margin: 0;
+  color: var(--vb-k7d-muted);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.vb-k7d__classes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.vb-k7d__classbtn {
+  min-width: 54px;
+  padding: 10px 16px;
+  border: 1px solid var(--vb-k7d-line);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--vb-k7d-text);
+  font-family: var(--t-headline-font, var(--t-text-font, system-ui, sans-serif));
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.vb-k7d__classbtn--letter { min-width: 48px; text-transform: lowercase; }
+
+.vb-k7d__classbtn:hover {
+  border-color: rgba(255, 176, 32, 0.55);
+  color: var(--vb-k7d-accent);
+  background-color: var(--vb-k7d-accent-soft);
+}
+
+.vb-k7d__classbtn--active {
+  border-color: var(--vb-k7d-accent);
+  background-color: var(--vb-k7d-accent);
+  color: #14180f;
+}
+
+.vb-k7d__classbtn--active:hover {
+  border-color: var(--vb-k7d-accent);
+  background-color: var(--vb-k7d-accent);
+  color: #14180f;
+}
+
+.vb-k7d__classbtn:focus-visible,
+.vb-k7d__daybtn:focus-visible,
+.vb-k7d__editbtn:focus-visible,
+.vb-k7d__btnsm:focus-visible,
+.vb-k7d__icobtn:focus-visible,
+.vb-k7d__addday:focus-visible,
+.vb-k7d__legadd:focus-visible,
+.vb-k7d__close:focus-visible {
+  outline: 2px solid var(--vb-k7d-accent);
+  outline-offset: 2px;
+}
+
+.vb-k7d__tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.vb-k7d__editbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--vb-k7d-line);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--vb-k7d-muted);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.vb-k7d__editbtn:hover {
+  color: var(--vb-k7d-accent);
+  border-color: rgba(255, 176, 32, 0.5);
+  background-color: var(--vb-k7d-accent-soft);
+}
+
+/* ---------- Панель правки ---------- */
+
+.vb-k7d__editbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 176, 32, 0.4);
+  border-radius: 12px;
+  background-color: var(--vb-k7d-accent-soft);
+}
+
+.vb-k7d__editstatus {
+  flex: 1 1 260px;
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--vb-k7d-text);
+}
+
+.vb-k7d__editmsg {
+  flex: 1 1 100%;
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--vb-k7d-accent);
+}
+
+.vb-k7d__editactions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.vb-k7d__btnsm {
+  padding: 8px 14px;
+  border: 1px solid var(--vb-k7d-line);
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.04);
+  color: var(--vb-k7d-text);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.vb-k7d__btnsm:hover {
+  color: var(--vb-k7d-accent);
+  border-color: rgba(255, 176, 32, 0.5);
+}
+
+.vb-k7d__btnsm--accent {
+  border-color: rgba(255, 176, 32, 0.5);
+  color: var(--vb-k7d-accent);
+}
+
+.vb-k7d__btnsm--danger:hover {
+  color: var(--vb-k7d-off);
+  border-color: rgba(255, 122, 92, 0.55);
+}
+
+/* ---------- Заголовок дня ---------- */
+
+.vb-k7d__main { padding: 22px 0 40px; }
+
+.vb-k7d__weekhead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 16px;
+  margin-bottom: 16px;
+}
+
+.vb-k7d__weektitle {
+  margin: 0;
+  font-family: var(--t-headline-font, var(--t-text-font, system-ui, sans-serif));
+  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.vb-k7d__weeksub {
+  margin: 0;
+  color: var(--vb-k7d-muted);
+  font-size: 13.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Выбор дня ---------- */
+
+.vb-k7d__daynav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 4px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+}
+
+.vb-k7d__daybtn {
+  flex: none;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  min-width: 88px;
+  padding: 8px 14px;
+  border: 1px solid var(--vb-k7d-line);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--vb-k7d-text);
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  scroll-snap-align: start;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.vb-k7d__daybtn small {
+  color: var(--vb-k7d-muted);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+.vb-k7d__daybtn:hover {
+  border-color: rgba(255, 176, 32, 0.55);
+  color: var(--vb-k7d-accent);
+  background-color: var(--vb-k7d-accent-soft);
+}
+
+.vb-k7d__daybtn--active,
+.vb-k7d__daybtn--active:hover {
+  border-color: var(--vb-k7d-accent);
+  background-color: var(--vb-k7d-accent);
+  color: #14180f;
+}
+
+.vb-k7d__daybtn--active small { color: rgba(20, 24, 15, 0.75); }
+
+/* ---------- Таблица дня ---------- */
+
+.vb-k7d__tables {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  min-height: 260px;
+}
+
+.vb-k7d__daytable {
+  min-width: 0;
+  padding: 16px 16px 14px;
+  border: 1px solid var(--vb-k7d-line-soft);
+  border-radius: 12px;
+  background-color: var(--vb-k7d-panel);
+}
+
+.vb-k7d__daytable--today {
+  border-color: rgba(255, 176, 32, 0.45);
+  background-color: #171d22;
+}
+
+.vb-k7d__dhead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  margin: 0 0 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--vb-k7d-line-soft);
+}
+
+.vb-k7d__dtitle {
+  margin: 0;
+  font-family: var(--t-headline-font, var(--t-text-font, system-ui, sans-serif));
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.vb-k7d__ddate {
+  margin: 0;
+  color: var(--vb-k7d-muted);
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.vb-k7d__chip {
+  margin-left: auto;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background-color: var(--vb-k7d-accent-soft);
+  color: var(--vb-k7d-accent);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vb-k7d__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.vb-k7d__table th {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--vb-k7d-line);
+  color: var(--vb-k7d-muted);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.vb-k7d__table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--vb-k7d-line-soft);
+  color: var(--vb-k7d-text);
+  text-align: left;
+  vertical-align: top;
+}
+
+.vb-k7d__table tbody tr:last-child td { border-bottom: 0; }
+
+.vb-k7d__tr--live { background-color: var(--vb-k7d-accent-soft); }
+.vb-k7d__tr--live .vb-k7d__ctimestart { color: var(--vb-k7d-accent); }
+
+.vb-k7d__tr--done { opacity: 0.85; }
+.vb-k7d__tr--done .vb-k7d__ctimestart { color: var(--vb-k7d-muted); }
+
+.vb-k7d__tr--off { opacity: 0.75; }
+.vb-k7d__tr--off .vb-k7d__subname { text-decoration: line-through; }
+.vb-k7d__tr--off .vb-k7d__ctimestart { color: var(--vb-k7d-muted); }
+
+.vb-k7d__cnum {
+  width: 46px;
+  color: var(--vb-k7d-muted);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.vb-k7d__cnum::after { content: " ур."; font-size: 10px; font-weight: 400; }
+
+.vb-k7d__ctime { white-space: nowrap; }
+
+.vb-k7d__ctimestart {
+  display: block;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.vb-k7d__ctimeto {
+  display: block;
+  margin-top: 1px;
+  color: var(--vb-k7d-muted);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.vb-k7d__csub {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.vb-k7d__subname { font-weight: 600; }
+
+.vb-k7d__statuspill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border: 1px solid var(--vb-k7d-line);
+  border-radius: 999px;
+  color: var(--vb-k7d-muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: 1px;
+}
+
+.vb-k7d__statuspill--live {
+  border-color: rgba(255, 176, 32, 0.5);
+  background-color: var(--vb-k7d-accent-soft);
+  color: var(--vb-k7d-accent);
+}
+
+.vb-k7d__statuspill--live .vb-k7d__dot { background-color: var(--vb-k7d-live); }
+.vb-k7d__statuspill--off { border-color: rgba(255, 122, 92, 0.45); color: var(--vb-k7d-off); }
+
+.vb-k7d__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+  flex: none;
+}
+
+.vb-k7d__croom,
+.vb-k7d__cteacher {
+  color: var(--vb-k7d-muted);
+  white-space: nowrap;
+  overflow-wrap: anywhere;
+}
+
+.vb-k7d__cact {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.vb-k7d__evtools {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.vb-k7d__icobtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--vb-k7d-line);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.04);
+  color: var(--vb-k7d-muted);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.vb-k7d__icobtn:hover {
+  color: var(--vb-k7d-accent);
+  border-color: rgba(255, 176, 32, 0.5);
+}
+
+.vb-k7d__icobtn--danger:hover {
+  color: var(--vb-k7d-off);
+  border-color: rgba(255, 122, 92, 0.55);
+}
+
+.vb-k7d__icobtn svg { width: 15px; height: 15px; }
+
+.vb-k7d__dayempty {
+  margin: 4px 0 0;
+  padding: 16px 6px;
+  color: var(--vb-k7d-muted);
+  font-size: 12.5px;
+  text-align: center;
+}
+
+.vb-k7d__addday {
+  margin-top: 10px;
+  width: 100%;
+  padding: 9px;
+  border: 1px dashed var(--vb-k7d-line);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--vb-k7d-muted);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.vb-k7d__addday:hover {
+  color: var(--vb-k7d-accent);
+  border-color: rgba(255, 176, 32, 0.5);
+}
+
+/* ---------- Обозначения и контакты ---------- */
+
+.vb-k7d__notes {
+  padding: 34px 0 40px;
+  border-top: 1px solid var(--vb-k7d-line);
+  background-color: var(--vb-k7d-band);
+}
+
+.vb-k7d__notestitle {
+  margin: 0 0 22px;
+  font-family: var(--t-headline-font, var(--t-text-font, system-ui, sans-serif));
+  letter-spacing: -0.01em;
+}
+
+.vb-k7d__notesgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+
+.vb-k7d__notecoltitle {
+  margin: 0 0 12px;
+  color: var(--vb-k7d-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.vb-k7d__notetext {
+  margin: 0;
+  max-width: 58ch;
+  color: var(--vb-k7d-muted);
+  text-wrap: pretty;
+}
+
+.vb-k7d__legend,
+.vb-k7d__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vb-k7d__legenditem,
+.vb-k7d__contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--vb-k7d-muted);
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+
+.vb-k7d__legendbody { flex: 1 1 auto; min-width: 0; }
+.vb-k7d__legenditem b { color: var(--vb-k7d-text); font-weight: 600; }
+
+.vb-k7d__legenddot {
+  width: 9px;
+  height: 9px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.35);
+  flex: none;
+}
+
+.vb-k7d__legenddot--live { background-color: var(--vb-k7d-live); box-shadow: 0 0 0 3px var(--vb-k7d-accent-soft); }
+.vb-k7d__legenddot--done { background-color: var(--vb-k7d-muted); }
+.vb-k7d__legenddot--off { background-color: var(--vb-k7d-off); }
+
+.vb-k7d__ltools {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.vb-k7d__legadd {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border: 1px dashed var(--vb-k7d-line);
+  border-radius: 9px;
+  background-color: transparent;
+  color: var(--vb-k7d-muted);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.vb-k7d__legadd:hover {
+  color: var(--vb-k7d-accent);
+  border-color: rgba(255, 176, 32, 0.5);
+}
+
+.vb-k7d__contact .vb-k7d__ico { margin-top: 2px; }
+
+.vb-k7d__link {
+  color: var(--vb-k7d-text);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 176, 32, 0.6);
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.vb-k7d__link:hover { color: var(--vb-k7d-accent); }
+
+.vb-k7d__disclaimer {
+  margin: 28px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--vb-k7d-line-soft);
+  color: var(--vb-k7d-muted);
+  font-size: 12.5px;
+  max-width: 72ch;
+}
+
+/* ---------- Модальные окна ---------- */
+
+.vb-k7d__modal {
+  position: fixed;
+  inset: 0;
+  z-index: var(--vb-k7d-z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.vb-k7d__backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: var(--vb-k7d-z-backdrop);
+  background-color: rgba(6, 8, 10, 0.75);
+}
+
+.vb-k7d__dialog {
+  position: relative;
+  width: 100%;
+  max-width: 470px;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  padding: 26px 24px 24px;
+  border: 1px solid var(--vb-k7d-line);
+  border-radius: 14px;
+  background-color: var(--vb-k7d-panel-2);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+.vb-k7d__modal--wide .vb-k7d__dialog { max-width: 960px; }
+
+.vb-k7d__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid var(--vb-k7d-line);
+  border-radius: 9px;
+  background-color: transparent;
+  color: var(--vb-k7d-muted);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.vb-k7d__close:hover {
+  color: var(--vb-k7d-accent);
+  border-color: rgba(255, 176, 32, 0.5);
+}
+
+.vb-k7d__dlgtitle {
+  margin: 0 0 6px;
+  font-family: var(--t-headline-font, var(--t-text-font, system-ui, sans-serif));
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding-right: 40px;
+}
+
+.vb-k7d__dlgtext {
+  margin: 0 0 18px;
+  color: var(--vb-k7d-muted);
+  font-size: 13px;
+  text-wrap: pretty;
+}
+
+.vb-k7d__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.vb-k7d__field span {
+  color: var(--vb-k7d-muted);
+  font-size: 11.5px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.vb-k7d__input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--vb-k7d-line);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.04);
+  color: var(--vb-k7d-text);
+  color-scheme: dark;
+  font-size: 14px;
+}
+
+.vb-k7d__input:focus {
+  outline: 2px solid var(--vb-k7d-accent);
+  outline-offset: 1px;
+}
+
+.vb-k7d__row2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 12px;
+}
+
+.vb-k7d__formerr {
+  margin: 0 0 14px;
+  color: var(--vb-k7d-off);
+  font-size: 13px;
+}
+
+.vb-k7d__dlgactions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.vb-k7d__hint {
+  margin: 16px 0 0;
+  color: var(--vb-k7d-muted);
+  font-size: 12px;
+}
+
+/* ---------- Редактор дня ---------- */
+
+.vb-k7d__edrows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.vb-k7d__edrow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 10px;
+  align-items: end;
+  padding: 10px;
+  border: 1px solid var(--vb-k7d-line-soft);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.vb-k7d__edfield {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.vb-k7d__edfield span {
+  color: var(--vb-k7d-muted);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.vb-k7d__edfield .vb-k7d__input { padding: 7px 9px; font-size: 13px; }
+
+.vb-k7d__edcheck {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 8px;
+  color: var(--vb-k7d-muted);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+.vb-k7d__edcheck input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--vb-k7d-accent);
+}
+
+/* ---------- Выпадающие списки (выбор мышкой) ---------- */
+
+.vb-k7d__combo {
+  position: relative;
+  display: flex;
+}
+
+.vb-k7d__combo .vb-k7d__input { cursor: pointer; }
+
+.vb-k7d__combo__pop {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 5;
+  max-height: 212px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 176, 32, 0.45);
+  border-radius: 10px;
+  background-color: #212a33;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+.vb-k7d__combo__opt {
+  padding: 8px 11px;
+  color: var(--vb-k7d-text);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.vb-k7d__combo__opt:hover { background-color: rgba(255, 255, 255, 0.07); }
+
+.vb-k7d__combo__opt--active {
+  background-color: var(--vb-k7d-accent-soft);
+  color: var(--vb-k7d-accent);
+}
+
+select.vb-k7d__input {
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 30px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none' stroke='%239ba6b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+}
+
+/* ---------- Вход: яркие поля ---------- */
+
+.vb-k7d__pane--login .vb-k7d__input {
+  background-color: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.26);
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.vb-k7d__pane--login .vb-k7d__input:hover { border-color: rgba(255, 255, 255, 0.4); }
+
+.vb-k7d__pane--login .vb-k7d__input:focus {
+  outline: 2px solid var(--vb-k7d-accent);
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.vb-k7d__pane--login .vb-k7d__field span { color: #c9d1d8; }
+
+.vb-k7d__passwrap {
+  position: relative;
+  display: flex;
+}
+
+.vb-k7d__passwrap .vb-k7d__input { padding-right: 44px; }
+
+.vb-k7d__passeye {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #aab4bd;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.vb-k7d__passeye:hover { color: #ffffff; border-color: rgba(255, 255, 255, 0.3); }
+.vb-k7d__passeye[aria-pressed="true"] { color: var(--vb-k7d-accent); }
+
+/* ---------- Автообозначения в редакторе ---------- */
+
+.vb-k7d__edauto {
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid var(--vb-k7d-line-soft);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.vb-k7d__autohead {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 6px;
+  color: var(--vb-k7d-text);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vb-k7d__autohead input {
+  width: 17px;
+  height: 17px;
+  margin-top: 1px;
+  accent-color: var(--vb-k7d-accent);
+  flex: none;
+}
+
+.vb-k7d__autotext {
+  margin: 0 0 10px;
+  color: var(--vb-k7d-muted);
+  font-size: 12.5px;
+}
+
+.vb-k7d__autogrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 10px;
+}
+
+.vb-k7d__autofield {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.vb-k7d__autofield span {
+  color: var(--vb-k7d-muted);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.vb-k7d__autofield .vb-k7d__input { padding: 7px 9px; font-size: 13px; }
+
+/* ---------- Выбор строки и столбца в редакторе ---------- */
+
+.vb-k7d__edrow { cursor: pointer; }
+
+.vb-k7d__edrow--active {
+  border-color: rgba(255, 176, 32, 0.45);
+  background-color: rgba(255, 176, 32, 0.06);
+}
+
+.vb-k7d__edfield--active span { color: var(--vb-k7d-accent); }
+
+.vb-k7d__edfield--active .vb-k7d__input {
+  border-color: rgba(255, 176, 32, 0.65);
+  background-color: rgba(255, 176, 32, 0.10);
+}
+
+.vb-k7d__edfield--col .vb-k7d__input { border-color: rgba(255, 255, 255, 0.24); }
+
+/* ---------- Клик по строке расписания ---------- */
+
+.vb-k7d__tr--click { cursor: pointer; }
+.vb-k7d__tr--click:hover { background-color: rgba(255, 255, 255, 0.045); }
+.vb-k7d__tr--live.vb-k7d__tr--click:hover { background-color: rgba(255, 176, 32, 0.18); }
+
+@media (min-width: 720px) {
+  .vb-k7d__autogrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* ---------- Анимации ---------- */
+
+@keyframes vb-k7d-rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes vb-k7d-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(62, 213, 152, 0.5); }
+  70% { box-shadow: 0 0 0 7px rgba(62, 213, 152, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(62, 213, 152, 0); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .vb-k7d__badge-dot,
+  .vb-k7d__statuspill--live .vb-k7d__dot {
+    animation: vb-k7d-pulse 2s ease-out infinite;
+  }
+
+  .vb-k7d__tables--anim > * {
+    animation: vb-k7d-rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  }
+}
+
+/* ---------- Адаптив ---------- */
+
+@media (max-width: 699px) {
+  .vb-k7d__table,
+  .vb-k7d__table tbody,
+  .vb-k7d__table tr,
+  .vb-k7d__table td { display: block; width: auto; }
+
+  .vb-k7d__table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .vb-k7d__tr {
+    padding: 8px 0 10px;
+    border-bottom: 1px solid var(--vb-k7d-line-soft);
+  }
+
+  .vb-k7d__table tbody tr:last-child { border-bottom: 0; }
+
+  .vb-k7d__table td {
+    padding: 3px 0;
+    border-bottom: 0;
+    white-space: normal;
+  }
+
+  .vb-k7d__table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 1px;
+    color: var(--vb-k7d-muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .vb-k7d__cnum::before { content: "Урок"; }
+  .vb-k7d__cact::before { display: none; }
+  .vb-k7d__cact { padding-top: 6px; }
+  .vb-k7d__evtools { justify-content: flex-start; }
+  .vb-k7d__statuspill { margin-left: 0; margin-top: 4px; }
+}
+
+@media (min-width: 640px) {
+  .vb-k7d__wrap { padding: 0 24px; }
+  .vb-k7d__head { padding: 46px 0 34px; }
+  .vb-k7d__notesgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+  .vb-k7d__main { padding: 26px 0 48px; }
+  .vb-k7d__row2 { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 720px) {
+  .vb-k7d__edrow {
+    grid-template-columns: 62px 108px minmax(0, 1.6fr) minmax(0, 1.2fr) 104px 66px auto auto;
+  }
+}
+
+@media (min-width: 780px) {
+  .vb-k7d__bar { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+  .vb-k7d__barinner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .vb-k7d__pickgroup { flex-direction: row; align-items: center; gap: 10px; }
+  .vb-k7d__tools { margin-left: auto; }
+}
+
+@media (min-width: 1000px) {
+  .vb-k7d__wrap { padding: 0 32px; }
+  .vb-k7d__head { padding: 58px 0 40px; }
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  var root = document.getElementById('vb-k7d-root');
+  if (!root) return;
+
+  /* Демо-доступ. На рабочем сайте логин и пароль должны проверяться на сервере,
+     а правки сохраняться в базе — клиентская проверка защищает только интерфейс. */
+  var AUTH = { user: 'admin', pass: 'meridian2025' };
+
+  var el = {
+    board: root.querySelector('#vb-k7d-board'),
+    daytitle: root.querySelector('#vb-k7d-daytitle'),
+    daysub: root.querySelector('#vb-k7d-daysub'),
+    daynav: root.querySelector('#vb-k7d-daynav'),
+    status: root.querySelector('#vb-k7d-status'),
+    clock: root.querySelector('#vb-k7d-clock'),
+    gradeBtns: Array.prototype.slice.call(root.querySelectorAll('[data-act="grade"]')),
+    letterBtns: Array.prototype.slice.call(root.querySelectorAll('[data-act="letter"]')),
+    editbtn: root.querySelector('#vb-k7d-editbtn'),
+    editbar: root.querySelector('#vb-k7d-editbar'),
+    editmsg: root.querySelector('#vb-k7d-editmsg'),
+    file: root.querySelector('#vb-k7d-file'),
+    legend: root.querySelector('#vb-k7d-legend'),
+    legendadd: root.querySelector('#vb-k7d-legendadd'),
+    modal: root.querySelector('#vb-k7d-modal'),
+    loginPane: root.querySelector('#vb-k7d-loginpane'),
+    edPane: root.querySelector('#vb-k7d-edpane'),
+    edTitle: root.querySelector('#vb-k7d-edtitle'),
+    edText: root.querySelector('#vb-k7d-edtext'),
+    edRows: root.querySelector('#vb-k7d-edrows'),
+    edAdd: root.querySelector('#vb-k7d-edadd'),
+    edErr: root.querySelector('#vb-k7d-ederr'),
+    evPane: root.querySelector('#vb-k7d-evpane'),
+    legPane: root.querySelector('#vb-k7d-legpane'),
+    user: root.querySelector('#vb-k7d-user'),
+    pass: root.querySelector('#vb-k7d-pass'),
+    loginErr: root.querySelector('#vb-k7d-loginerr'),
+    evTitle: root.querySelector('#vb-k7d-evdlgtitle'),
+    evText: root.querySelector('#vb-k7d-evdlgtext'),
+    evSubmit: root.querySelector('#vb-k7d-evsubmit'),
+    evDel: root.querySelector('#vb-k7d-evdel'),
+    evErr: root.querySelector('#vb-k7d-everr'),
+    fNum: root.querySelector('#vb-k7d-f-num'),
+    fTime: root.querySelector('#vb-k7d-f-time'),
+    fSubj: root.querySelector('#vb-k7d-f-subj'),
+    fTeacher: root.querySelector('#vb-k7d-f-teacher'),
+    fRoom: root.querySelector('#vb-k7d-f-room'),
+    fDur: root.querySelector('#vb-k7d-f-dur'),
+    fStatus: root.querySelector('#vb-k7d-f-status'),
+    legTitle: root.querySelector('#vb-k7d-legdlgtitle'),
+    lTitle: root.querySelector('#vb-k7d-l-title'),
+    lDescr: root.querySelector('#vb-k7d-l-descr'),
+    lColor: root.querySelector('#vb-k7d-l-color'),
+    legErr: root.querySelector('#vb-k7d-legrerr'),
+    legDel: root.querySelector('#vb-k7d-legdel'),
+    passeye: root.querySelector('#vb-k7d-passeye'),
+    autoOn: root.querySelector('#vb-k7d-autoon'),
+    autoLive: root.querySelector('#vb-k7d-auto-live'),
+    autoDone: root.querySelector('#vb-k7d-auto-done'),
+    autoNext: root.querySelector('#vb-k7d-auto-next'),
+    autoOff: root.querySelector('#vb-k7d-auto-off')
+  };
+
+  /* ---------- Классы и подгруппы ---------- */
+
+  var GRADES = [5, 6, 7, 8, 9];
+  var LETTERS = ['а', 'б', 'в', 'г'];
+  var LETTER_LAT = { 'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g' };
+  var LAT_LETTER = { 'a': 'а', 'b': 'б', 'v': 'в', 'g': 'г' };
+
+  /* ---------- Даты ---------- */
+
+  var fmtMon = new Intl.DateTimeFormat('ru-RU', { day: 'numeric', month: 'long' });
+  var fmtWeekday = new Intl.DateTimeFormat('ru-RU', { weekday: 'long' });
+  var fmtTime = new Intl.DateTimeFormat('ru-RU', { hour: '2-digit', minute: '2-digit', hour12: false });
+
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+  function iso(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function month(d) { return fmtMon.format(d).replace(/^\d+\s*/, '').replace(/\./g, ''); }
+  function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+  function dayIdx(d) { return (d.getDay() + 6) % 7; }
+
+  function plural(n, one, few, many) {
+    var n10 = n % 10, n100 = n % 100;
+    if (n10 === 1 && n100 !== 11) return one;
+    if (n10 >= 2 && n10 <= 4 && (n100 < 10 || n100 >= 20)) return few;
+    return many;
+  }
+
+  /* ---------- Данные расписания (детерминированные) ---------- */
+
+  var SLOTS = [['08:30', 45], ['09:25', 45], ['10:25', 45], ['11:20', 45], ['12:15', 45], ['13:10', 45], ['14:05', 45]];
+  var DAY_BASE = [6, 5, 5, 5, 4, 3, 2];
+
+  var SUBJECTS = [
+    { s: 'Математика', t: ['Ерохина Н. П.', 'Кузьмин А. В.', 'Ларина О. С.'], r: ['каб. 205', 'каб. 206'] },
+    { s: 'Русский язык', t: ['Седова Л. И.', 'Панкратова В. М.'], r: ['каб. 212'] },
+    { s: 'Литература', t: ['Седова Л. И.', 'Гаврилов Р. Т.'], r: ['каб. 212'] },
+    { s: 'История', t: ['Дроздов М. К.', 'Хабаров И. С.'], r: ['каб. 301'] },
+    { s: 'Обществознание', t: ['Хабаров И. С.'], r: ['каб. 301'] },
+    { s: 'География', t: ['Юдина Т. А.'], r: ['каб. 304'] },
+    { s: 'Биология', t: ['Мальцева Е. В.', 'Рогов П. Н.'], r: ['каб. 210', 'каб. 211'] },
+    { s: 'Химия', t: ['Рогов П. Н.', 'Зуева А. И.'], r: ['каб. 214'] },
+    { s: 'Физика', t: ['Зуева А. И.', 'Кузьмин А. В.'], r: ['каб. 216'] },
+    { s: 'Английский язык', t: ['Блик Е. Д.', 'Мирошник С. Л.'], r: ['каб. 118', 'каб. 119'] },
+    { s: 'Информатика', t: ['Мирошник С. Л.', 'Гаврилов Р. Т.'], r: ['комп. класс'] },
+    { s: 'Физкультура', t: ['Кривов А. Б.', 'Сотникова Д. Ю.'], r: ['спортзал'] },
+    { s: 'Музыка', t: ['Гаврилов Р. Т.'], r: ['каб. 005'] },
+    { s: 'ОБЖ', t: ['Кривов А. Б.'], r: ['каб. 008'] },
+    { s: 'Технология', t: ['Сотникова Д. Ю.'], r: ['каб. 007'] }
+  ];
+
+  var LEGEND_DEFAULT = [
+    { t: 'Идёт', d: 'текущий урок', k: 'live' },
+    { t: 'Завершено', d: 'прошедшие уроки', k: 'done' },
+    { t: 'Отменён', d: 'урок не проводится', k: 'off' },
+    { t: 'Предстоит', d: 'урок впереди', k: '' }
+  ];
+
+  function hashStr(s) {
+    var h = 2166136261, i;
+    for (i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return h >>> 0;
+  }
+
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      var t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+
+  function byN(a, b) { return a.n - b.n || (a.time < b.time ? -1 : a.time > b.time ? 1 : 0); }
+
+  function generateLessons(cls, d) {
+    var rnd = mulberry32(hashStr(cls + '|' + iso(d)));
+    var count = DAY_BASE[dayIdx(d)] + (rnd() < 0.5 ? 0 : 1);
+    if (count > SLOTS.length) count = SLOTS.length;
+
+    var pool = SUBJECTS.slice(), i, j, tmp;
+    for (i = pool.length - 1; i > 0; i--) {
+      j = Math.floor(rnd() * (i + 1));
+      tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
+    }
+
+    var list = [];
+    for (i = 0; i < count; i++) {
+      var sub = pool[i % pool.length];
+      list.push({
+        n: i + 1,
+        time: SLOTS[i][0],
+        dur: SLOTS[i][1],
+        subj: sub.s,
+        teacher: sub.t[Math.floor(rnd() * sub.t.length)],
+        room: sub.r[Math.floor(rnd() * sub.r.length)],
+        cancelled: false
+      });
+    }
+    for (i = 0; i < list.length; i++) {
+      if (rnd() < 0.05) list[i].cancelled = true;
+    }
+    return list;
+  }
+
+  function keyOf(cls, d) { return cls + '|' + iso(d); }
+
+  function dayPlain(cls, d) {
+    var key = keyOf(cls, d);
+    return edits[key] || (edits[key] = generateLessons(cls, d));
+  }
+
+  function hydrate(d, p) {
+    var hm = p.time.split(':');
+    var start = new Date(d.getFullYear(), d.getMonth(), d.getDate(), +hm[0], +hm[1]);
+    return {
+      start: start,
+      end: new Date(start.getTime() + p.dur * 60000),
+      cancelled: !!p.cancelled
+    };
+  }
+
+  function statusOf(ev, now) {
+    if (ev.cancelled) return 'off';
+    if (now >= ev.end) return 'done';
+    if (now >= ev.start) return 'live';
+    return 'next';
+  }
+
+  var AUTO_DEFAULT = { on: true, live: 'Идёт', done: 'Завершён', next: 'Предстоит', off: 'Отменён' };
+  var AUTO_DESCR = { live: 'текущий урок', done: 'прошедшие уроки', next: 'урок впереди', off: 'урок не проводится' };
+  var AUTO_ORDER = ['live', 'done', 'off', 'next'];
+
+  /* ---------- Состояние ---------- */
+
+  var TODAY = startOfDay(new Date());
+
+  var auth = { loggedIn: false };
+  var edits = {};
+  var legend = LEGEND_DEFAULT.map(function (x) { return { t: x.t, d: x.d, k: x.k }; });
+  var autoConfig = { on: AUTO_DEFAULT.on, live: AUTO_DEFAULT.live, done: AUTO_DEFAULT.done, next: AUTO_DEFAULT.next, off: AUTO_DEFAULT.off };
+
+  var DAYS_AHEAD = 6;
+  var state = { grade: 7, letter: 'б', dayOffset: 0 };
+
+  function clsName() { return '' + state.grade + state.letter; }
+
+  function viewDate() {
+    return new Date(TODAY.getFullYear(), TODAY.getMonth(), TODAY.getDate() + state.dayOffset);
+  }
+
+  function dayWord(vd) {
+    var diff = Math.round((vd.getTime() - TODAY.getTime()) / 86400000);
+    if (diff === 0) return 'сегодня';
+    if (diff === 1) return 'завтра';
+    return cap(fmtWeekday.format(vd)) + ', ' + vd.getDate() + ' ' + month(vd);
+  }
+
+  /* ---------- Разметка ---------- */
+
+  function node(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  var SVG_PENCIL = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4l10-10-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>';
+  var SVG_TRASH = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M10 7V5h4v2"/><path d="M6 7l1 13h10l1-13"/></svg>';
+
+  /* ---------- Данные для выпадающих списков ---------- */
+
+  var SLOT_TIMES = SLOTS.map(function (s) { return s[0]; });
+  var SUBJECT_NAMES = SUBJECTS.map(function (s) { return s.s; }).sort();
+
+  var TEACHERS_BY_SUBJ = {};
+  var ALL_TEACHERS = [];
+  SUBJECTS.forEach(function (s) {
+    if (!TEACHERS_BY_SUBJ[s.s]) TEACHERS_BY_SUBJ[s.s] = s.t.slice();
+    s.t.forEach(function (t) { if (ALL_TEACHERS.indexOf(t) < 0) ALL_TEACHERS.push(t); });
+  });
+  ALL_TEACHERS.sort();
+
+  var ALL_ROOMS = [];
+  SUBJECTS.forEach(function (s) {
+    s.r.forEach(function (r) { if (ALL_ROOMS.indexOf(r) < 0) ALL_ROOMS.push(r); });
+  });
+  ALL_ROOMS.sort();
+
+  function trimLc(v) { return String(v || '').replace(/^\s+|\s+$/g, '').toLowerCase(); }
+
+  function filterList(list, v) {
+    var q = trimLc(v), out = [], i;
+    for (i = 0; i < list.length && out.length < 8; i++) {
+      if (!q || trimLc(list[i]).indexOf(q) >= 0) out.push(list[i]);
+    }
+    return out;
+  }
+
+  function teacherPool(subj) {
+    var pool = TEACHERS_BY_SUBJ[String(subj || '').replace(/^\s+|\s+$/g, '')];
+    if (!pool) return ALL_TEACHERS;
+    var extra = ALL_TEACHERS.filter(function (t) { return pool.indexOf(t) < 0; });
+    return pool.concat(extra);
+  }
+
+  var comboSeq = 0;
+
+  /* Выпадающий список под полем: клик мышкой открывает варианты,
+     выбор варианта подставляет значение в поле. */
+  function makeCombo(input, getOptions) {
+    comboSeq++;
+    var popId = 'vb-k7d-pop-' + comboSeq;
+    var wrap = document.createElement('div');
+    wrap.className = 'vb-k7d__combo';
+    input.parentNode.insertBefore(wrap, input);
+    wrap.appendChild(input);
+
+    var pop = document.createElement('div');
+    pop.className = 'vb-k7d__combo__pop';
+    pop.id = popId;
+    pop.setAttribute('role', 'listbox');
+    pop.hidden = true;
+    wrap.appendChild(pop);
+
+    input.setAttribute('role', 'combobox');
+    input.setAttribute('aria-expanded', 'false');
+    input.setAttribute('aria-autocomplete', 'list');
+    input.setAttribute('aria-controls', popId);
+    input.setAttribute('autocomplete', 'off');
+
+    var items = [], active = -1;
+
+    function close() {
+      pop.hidden = true;
+      input.setAttribute('aria-expanded', 'false');
+      input.removeAttribute('aria-activedescendant');
+      active = -1;
+    }
+
+    function setActive(i) {
+      var j;
+      for (j = 0; j < items.length; j++) {
+        items[j].classList.toggle('vb-k7d__combo__opt--active', j === i);
+      }
+      active = i;
+      if (items[i]) {
+        items[i].setAttribute('aria-selected', 'true');
+        input.setAttribute('aria-activedescendant', items[i].id);
+        if (items[i].scrollIntoView) items[i].scrollIntoView({ block: 'nearest' });
+      }
+    }
+
+    function open() {
+      var list = getOptions(input.value), i;
+      pop.textContent = '';
+      items = [];
+      for (i = 0; i < list.length; i++) {
+        (function (text) {
+          var o = document.createElement('div');
+          o.className = 'vb-k7d__combo__opt';
+          o.id = popId + '-' + i;
+          o.setAttribute('role', 'option');
+          o.textContent = text;
+          o.addEventListener('mousedown', function (ev) { ev.preventDefault(); });
+          o.addEventListener('click', function () { pick(text); });
+          pop.appendChild(o);
+          items.push(o);
+        })(list[i]);
+      }
+      if (!items.length) { close(); return; }
+      pop.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+      var sel = list.indexOf(input.value);
+      setActive(sel >= 0 ? sel : 0);
+    }
+
+    function pick(text) {
+      input.value = text;
+      close();
+      input.focus();
+      if (input.select) input.select();
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+
+    input.addEventListener('focus', function () {
+      open();
+      if (input.select) input.select();
+    });
+    input.addEventListener('click', open);
+    input.addEventListener('input', open);
+    input.addEventListener('blur', close);
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (pop.hidden) open();
+        else if (items.length) setActive(Math.min(active + 1, items.length - 1));
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (pop.hidden) open();
+        else if (items.length) setActive(Math.max(active - 1, 0));
+      } else if (e.key === 'Enter') {
+        if (!pop.hidden && active >= 0 && items[active]) {
+          e.preventDefault();
+          pick(items[active].textContent);
+        }
+      } else if (e.key === 'Escape' && !pop.hidden) {
+        e.stopPropagation();
+        close();
+      }
+    });
+    return { open: open, close: close };
+  }
+
+  function wireCombos(row) {
+    var subj = edVal(row, 'subj');
+    var teacher = edVal(row, 'teacher');
+    makeCombo(edVal(row, 'time'), function (v) { return filterList(SLOT_TIMES, v); });
+    makeCombo(subj, function (v) { return filterList(SUBJECT_NAMES, v); });
+    makeCombo(teacher, function (v) { return filterList(teacherPool(subj.value), v); });
+    makeCombo(edVal(row, 'room'), function (v) { return filterList(ALL_ROOMS, v); });
+  }
+
+  function iconBtn(act, label, dateKey, idx, svg, danger) {
+    var b = node('button', 'vb-k7d__icobtn' + (danger ? ' vb-k7d__icobtn--danger' : ''));
+    b.type = 'button';
+    b.setAttribute('data-act', act);
+    if (dateKey) b.setAttribute('data-date', dateKey);
+    if (idx != null) b.setAttribute('data-idx', String(idx));
+    b.setAttribute('aria-label', label);
+    b.innerHTML = svg;
+    return b;
+  }
+
+  function editTools(dateKey, idx, subj) {
+    var box = node('div', 'vb-k7d__evtools');
+    box.appendChild(iconBtn('ev-edit', 'Редактировать урок «' + subj + '»', dateKey, idx, SVG_PENCIL, false));
+    box.appendChild(iconBtn('ev-del', 'Удалить урок «' + subj + '»', dateKey, idx, SVG_TRASH, true));
+    return box;
+  }
+
+  function statusPill(st) {
+    if (!autoConfig.on) return null;
+    var s = node('span', 'vb-k7d__statuspill vb-k7d__statuspill--' + st);
+    s.appendChild(node('span', 'vb-k7d__dot'));
+    s.appendChild(document.createTextNode(autoConfig[st] || ''));
+    return s;
+  }
+
+  function applyAutoToLegend() {
+    AUTO_ORDER.forEach(function (k) {
+      var lk = k === 'next' ? '' : k;
+      var found = null, i;
+      for (i = 0; i < legend.length; i++) if (legend[i].k === lk) { found = legend[i]; break; }
+      if (found) { found.t = autoConfig[k]; found.d = AUTO_DESCR[k]; }
+      else legend.push({ t: autoConfig[k], d: AUTO_DESCR[k], k: lk });
+    });
+  }
+
+  function td(label, cls, text) {
+    var c = node('td', cls, text);
+    c.setAttribute('data-label', label);
+    return c;
+  }
+
+  function lessonRow(p, idx, d, now, key) {
+    var ev = hydrate(d, p);
+    var st = statusOf(ev, now);
+    var tr = node('tr', 'vb-k7d__tr vb-k7d__tr--' + st);
+
+    tr.appendChild(td('Урок', 'vb-k7d__cnum', String(p.n)));
+
+    var timeCell = td('Время', 'vb-k7d__ctime');
+    var tspan = node('span', 'vb-k7d__ctimestart', p.time);
+    tspan.appendChild(node('span', 'vb-k7d__ctimeto', 'до ' + fmtTime.format(ev.end)));
+    timeCell.appendChild(tspan);
+    tr.appendChild(timeCell);
+
+    var subCell = td('Предмет', 'vb-k7d__csub');
+    subCell.appendChild(node('span', 'vb-k7d__subname', p.subj));
+    var pill = statusPill(st);
+    if (pill) subCell.appendChild(pill);
+    tr.appendChild(subCell);
+
+    tr.appendChild(td('Кабинет', 'vb-k7d__croom', p.room));
+    tr.appendChild(td('Учитель', 'vb-k7d__cteacher', p.teacher));
+
+    if (auth.loggedIn) {
+      var act = node('td', 'vb-k7d__cact');
+      act.setAttribute('data-label', 'Действия');
+      act.appendChild(editTools(key, idx, p.subj));
+      tr.appendChild(act);
+
+      tr.classList.add('vb-k7d__tr--click');
+      tr.setAttribute('data-act', 'ev-edit');
+      tr.setAttribute('data-date', key);
+      tr.setAttribute('data-idx', String(idx));
+      tr.setAttribute('title', 'Клик по строке — открыть урок в редакторе');
+    }
+    return tr;
+  }
+
+  function dayTable(d, now) {
+    var cls = clsName();
+    var key = keyOf(cls, d);
+    var plain = dayPlain(cls, d);
+    var isToday = d.getTime() === TODAY.getTime();
+    var art = node('article', 'vb-k7d__daytable' + (isToday ? ' vb-k7d__daytable--today' : ''));
+
+    var head = node('header', 'vb-k7d__dhead');
+    head.appendChild(node('h3', 'vb-k7d__dtitle', 'Расписание на ' + dayWord(d)));
+    head.appendChild(node('p', 'vb-k7d__ddate', cap(fmtWeekday.format(d)) + ', ' + d.getDate() + ' ' + month(d)));
+    head.appendChild(node('span', 'vb-k7d__chip', cls + ' класс'));
+    art.appendChild(head);
+
+    if (!plain.length) {
+      art.appendChild(node('p', 'vb-k7d__dayempty', 'На ' + dayWord(d) + ' уроков нет'));
+    } else {
+      var table = node('table', 'vb-k7d__table');
+      var thead = node('thead');
+      var htr = node('tr');
+      ['№', 'Время', 'Предмет', 'Кабинет', 'Учитель'].forEach(function (h) {
+        var th = node('th', null, h);
+        th.setAttribute('scope', 'col');
+        htr.appendChild(th);
+      });
+      if (auth.loggedIn) {
+        var thAct = node('th');
+        thAct.setAttribute('scope', 'col');
+        thAct.appendChild(node('span', 'vb-k7d__sr', 'Действия'));
+        htr.appendChild(thAct);
+      }
+      thead.appendChild(htr);
+      table.appendChild(thead);
+
+      var tbody = node('tbody');
+      for (var i = 0; i < plain.length; i++) {
+        tbody.appendChild(lessonRow(plain[i], i, d, now, key));
+      }
+      table.appendChild(tbody);
+      art.appendChild(table);
+    }
+
+    if (auth.loggedIn) {
+      var add = node('button', 'vb-k7d__addday', '＋ Урок');
+      add.type = 'button';
+      add.setAttribute('data-act', 'ev-add');
+      add.setAttribute('data-date', key);
+      add.setAttribute('aria-label', 'Добавить урок на ' + dayWord(d));
+      art.appendChild(add);
+    }
+    return art;
+  }
+
+  /* ---------- Обозначения ---------- */
+
+  function renderLegend() {
+    el.legend.textContent = '';
+    legend.forEach(function (item, i) {
+      var li = node('li', 'vb-k7d__legenditem');
+      li.appendChild(node('span', 'vb-k7d__legenddot' + (item.k ? ' vb-k7d__legenddot--' + item.k : '')));
+      var body = node('span', 'vb-k7d__legendbody');
+      body.appendChild(node('b', null, item.t));
+      body.appendChild(document.createTextNode(' — ' + item.d));
+      li.appendChild(body);
+      if (auth.loggedIn) {
+        var tools = node('span', 'vb-k7d__ltools');
+        tools.appendChild(iconBtn('leg-edit', 'Редактировать обозначение «' + item.t + '»', null, i, SVG_PENCIL, false));
+        tools.appendChild(iconBtn('leg-del', 'Удалить обозначение «' + item.t + '»', null, i, SVG_TRASH, true));
+        li.appendChild(tools);
+      }
+      el.legend.appendChild(li);
+    });
+    el.legendadd.hidden = !auth.loggedIn;
+  }
+
+  /* ---------- Отрисовка ---------- */
+
+  function animate(box) {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    box.classList.add('vb-k7d__tables--anim');
+    window.setTimeout(function () { box.classList.remove('vb-k7d__tables--anim'); }, 900);
+  }
+
+  function updateControls() {
+    el.gradeBtns.forEach(function (b) {
+      var active = parseInt(b.getAttribute('data-grade'), 10) === state.grade;
+      b.classList.toggle('vb-k7d__classbtn--active', active);
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    el.letterBtns.forEach(function (b) {
+      var active = b.getAttribute('data-letter') === state.letter;
+      b.classList.toggle('vb-k7d__classbtn--active', active);
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+  }
+
+  function announce() {
+    el.status.textContent = 'Показано расписание ' + clsName() + ' класса на ' + dayWord(viewDate()) + '. ' + el.daysub.textContent + '.';
+  }
+
+  function writeHash() {
+    try {
+      var v = 'c=' + state.grade + LETTER_LAT[state.letter] + '&d=' + state.dayOffset;
+      if (location.hash.replace(/^#/, '') !== v) history.replaceState(null, '', '#' + v);
+    } catch (e) { /* noop */ }
+  }
+
+  function readHash() {
+    var m = /#c=(\d)([abvg])(?:&d=(\d+))?/.exec(location.hash || '');
+    if (!m) return;
+    var g = parseInt(m[1], 10);
+    var l = LAT_LETTER[m[2]];
+    if (GRADES.indexOf(g) >= 0 && l) { state.grade = g; state.letter = l; }
+    var off = parseInt(m[3] || '0', 10);
+    if (off >= 0 && off <= DAYS_AHEAD) state.dayOffset = off;
+  }
+
+  function renderDayNav() {
+    el.daynav.textContent = '';
+    for (var i = 0; i <= DAYS_AHEAD; i++) {
+      var vd = new Date(TODAY.getFullYear(), TODAY.getMonth(), TODAY.getDate() + i);
+      var b = node('button', 'vb-k7d__daybtn');
+      b.type = 'button';
+      b.setAttribute('data-act', 'day');
+      b.setAttribute('data-off', String(i));
+      b.appendChild(node('span', null, i === 0 ? 'Сегодня' : i === 1 ? 'Завтра' : cap(fmtWeekday.format(vd))));
+      b.appendChild(node('small', null, vd.getDate() + ' ' + month(vd)));
+      var active = i === state.dayOffset;
+      b.classList.toggle('vb-k7d__daybtn--active', active);
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
+      el.daynav.appendChild(b);
+    }
+  }
+
+  function render() {
+    var now = new Date();
+    var vd = viewDate();
+    var plain = dayPlain(clsName(), vd);
+    var total = plain.length, off = 0, j;
+    for (j = 0; j < plain.length; j++) if (plain[j].cancelled) off++;
+
+    el.board.textContent = '';
+    el.board.appendChild(dayTable(vd, now));
+    animate(el.board);
+    renderDayNav();
+
+    var dpre = state.dayOffset === 0 ? 'Сегодня' : state.dayOffset === 1 ? 'Завтра' : '';
+    el.daytitle.textContent = (dpre ? dpre + ' · ' : '') + cap(fmtWeekday.format(vd)) + ', ' + vd.getDate() + ' ' + month(vd);
+    var parts = ['Класс ' + clsName(),
+      total + ' ' + plural(total, 'урок', 'урока', 'уроков')];
+    if (off) parts.push(off + ' ' + plural(off, 'отмена', 'отмены', 'отмен'));
+    el.daysub.textContent = parts.join(' · ');
+
+    renderLegend();
+    updateControls();
+    announce();
+    writeHash();
+  }
+
+  /* ---------- Режим правки ---------- */
+
+  var msgTimer = null;
+
+  function editMsg(text) {
+    el.editmsg.textContent = text;
+    if (msgTimer) window.clearTimeout(msgTimer);
+    msgTimer = window.setTimeout(function () { el.editmsg.textContent = ''; }, 5000);
+  }
+
+  function enterEdit() {
+    el.editbar.hidden = false;
+    el.editbtn.hidden = true;
+    render();
+    editMsg('Вход выполнен. Доступны «Редактор дня», кнопки ✎ / 🗑 у уроков и добавление уроков.');
+  }
+
+  function exitEdit() {
+    auth.loggedIn = false;
+    el.editbar.hidden = true;
+    el.editbtn.hidden = false;
+    el.editmsg.textContent = '';
+    render();
+  }
+
+  /* ---------- Модальные окна ---------- */
+
+  var PANES = ['loginPane', 'edPane', 'evPane', 'legPane'];
+  var activePane = null;
+  var lastFocus = null;
+
+  function openModal(pane) {
+    lastFocus = document.activeElement;
+    PANES.forEach(function (k) { el[k].hidden = el[k] !== pane; });
+    activePane = pane;
+    el.modal.classList.toggle('vb-k7d__modal--wide', pane === el.edPane);
+    el.modal.hidden = false;
+    var first = pane.querySelector('input, select, button');
+    if (first) first.focus();
+  }
+
+  function closeModal() {
+    el.modal.hidden = true;
+    el.modal.classList.remove('vb-k7d__modal--wide');
+    activePane = null;
+    el.loginErr.hidden = true;
+    el.evErr.hidden = true;
+    el.legErr.hidden = true;
+    el.edErr.hidden = true;
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  el.modal.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('[data-close]') : null;
+    if (t) closeModal();
+  });
+
+  el.modal.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { e.preventDefault(); closeModal(); return; }
+    if (e.key !== 'Tab' || !activePane) return;
+    var nodes = Array.prototype.slice.call(activePane.querySelectorAll('button, input, select, a[href]'))
+      .filter(function (n) { return !n.disabled && n.offsetParent !== null; });
+    if (!nodes.length) return;
+    var first = nodes[0], last = nodes[nodes.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  el.editbtn.addEventListener('click', function () {
+    el.user.value = '';
+    el.pass.value = '';
+    el.pass.type = 'password';
+    el.passeye.setAttribute('aria-pressed', 'false');
+    el.passeye.setAttribute('aria-label', 'Показать пароль');
+    el.loginErr.hidden = true;
+    openModal(el.loginPane);
+  });
+
+  el.passeye.addEventListener('click', function () {
+    var show = el.pass.type === 'password';
+    el.pass.type = show ? 'text' : 'password';
+    el.passeye.setAttribute('aria-pressed', show ? 'true' : 'false');
+    el.passeye.setAttribute('aria-label', show ? 'Скрыть пароль' : 'Показать пароль');
+    el.pass.focus();
+  });
+
+  el.loginPane.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var u = el.user.value.replace(/^\s+|\s+$/g, '');
+    var p = el.pass.value;
+    if (u === AUTH.user && p === AUTH.pass) {
+      auth.loggedIn = true;
+      closeModal();
+      enterEdit();
+    } else {
+      el.loginErr.hidden = false;
+      el.pass.value = '';
+      el.pass.focus();
+    }
+  });
+
+  /* ---------- Редактор дня ---------- */
+
+  function edField(key, label, type, value, extra) {
+    var lab = node('label', 'vb-k7d__edfield');
+    lab.appendChild(node('span', null, label));
+    var inp = document.createElement('input');
+    inp.className = 'vb-k7d__input';
+    inp.type = type;
+    inp.value = value;
+    inp.setAttribute('data-ed', key);
+    if (extra) {
+      Object.keys(extra).forEach(function (k) { inp.setAttribute(k, extra[k]); });
+    }
+    lab.appendChild(inp);
+    return lab;
+  }
+
+  function buildEdRow(p) {
+    var row = node('div', 'vb-k7d__edrow');
+
+    var numField = node('label', 'vb-k7d__edfield');
+    numField.appendChild(node('span', null, 'Урок №'));
+    var numSel = document.createElement('select');
+    numSel.className = 'vb-k7d__input';
+    numSel.setAttribute('data-ed', 'n');
+    for (var k = 1; k <= 12; k++) {
+      var nOp = document.createElement('option');
+      nOp.value = String(k);
+      nOp.textContent = String(k);
+      numSel.appendChild(nOp);
+    }
+    numSel.value = String(Math.min(Math.max(p.n, 1), 12));
+    numField.appendChild(numSel);
+    row.appendChild(numField);
+
+    row.appendChild(edField('time', 'Время', 'text', p.time, { maxlength: '5', placeholder: 'ЧЧ:ММ', inputmode: 'numeric' }));
+    row.appendChild(edField('subj', 'Предмет', 'text', p.subj, { maxlength: '60' }));
+    row.appendChild(edField('teacher', 'Учитель', 'text', p.teacher === '—' ? '' : p.teacher, { maxlength: '60' }));
+    row.appendChild(edField('room', 'Кабинет', 'text', p.room === '—' ? '' : p.room, { maxlength: '40' }));
+    row.appendChild(edField('dur', 'Минут', 'number', p.dur, { min: '15', max: '120', step: '5' }));
+
+    var check = node('label', 'vb-k7d__edcheck');
+    var cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.setAttribute('data-ed', 'off');
+    cb.checked = !!p.cancelled;
+    check.appendChild(cb);
+    check.appendChild(node('span', null, 'Отменён'));
+    row.appendChild(check);
+
+    var del = iconBtn('ed-del', 'Удалить строку', null, null, SVG_TRASH, true);
+    del.setAttribute('data-edact', 'del');
+    row.appendChild(del);
+
+    wireCombos(row);
+    return row;
+  }
+
+  function edVal(row, key) {
+    return row.querySelector('[data-ed="' + key + '"]');
+  }
+
+  function openEditor() {
+    var cls = clsName();
+    var vd = viewDate();
+    el.edTitle.textContent = 'Редактор расписания · ' + cls + ' класс · ' + dayWord(vd);
+    el.edText.textContent = 'День: ' + cap(fmtWeekday.format(vd)) + ', ' + vd.getDate() + ' ' + month(vd) +
+      '. Кликните по любому полю — под ним откроется список: номер, время, предмет, учитель и кабинет выбираются мышкой. Затем нажмите «Сохранить расписание».';
+    el.edRows.textContent = '';
+    dayPlain(cls, vd).forEach(function (p) { el.edRows.appendChild(buildEdRow(p)); });
+    el.autoOn.checked = !!autoConfig.on;
+    el.autoLive.value = autoConfig.live;
+    el.autoDone.value = autoConfig.done;
+    el.autoNext.value = autoConfig.next;
+    el.autoOff.value = autoConfig.off;
+    el.edErr.hidden = true;
+    openModal(el.edPane);
+  }
+
+  el.edAdd.addEventListener('click', function () {
+    var row = buildEdRow({ n: el.edRows.children.length + 1, time: '08:30', dur: 45, subj: '', teacher: '', room: '', cancelled: false });
+    el.edRows.appendChild(row);
+    var inp = edVal(row, 'subj');
+    if (inp) inp.focus();
+    if (row.scrollIntoView) row.scrollIntoView({ block: 'nearest' });
+  });
+
+  el.edRows.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('[data-edact="del"]') : null;
+    if (!t) return;
+    var row = t.closest('.vb-k7d__edrow');
+    if (row && row.parentNode) row.parentNode.removeChild(row);
+  });
+
+  /* Мышью: клик по строке выделяет её, клик по ячейке — ещё и столбец */
+
+  el.edRows.addEventListener('focusin', function (e) {
+    var tgt = e.target;
+    if (tgt && tgt.tagName === 'INPUT' && typeof tgt.select === 'function' && tgt.type !== 'checkbox') {
+      try { tgt.select(); } catch (err) { /* noop */ }
+    }
+    var row = e.target.closest ? e.target.closest('.vb-k7d__edrow') : null;
+    if (!row) return;
+    var field = e.target.closest ? e.target.closest('.vb-k7d__edfield') : null;
+    var rows = Array.prototype.slice.call(el.edRows.querySelectorAll('.vb-k7d__edrow'));
+    var idx = field ? Array.prototype.indexOf.call(row.children, field) : -1;
+
+    rows.forEach(function (r) {
+      r.classList.toggle('vb-k7d__edrow--active', r === row);
+      Array.prototype.slice.call(r.querySelectorAll('.vb-k7d__edfield')).forEach(function (f, i) {
+        f.classList.toggle('vb-k7d__edfield--active', r === row && i === idx);
+        f.classList.toggle('vb-k7d__edfield--col', r !== row && i === idx);
+      });
+    });
+  });
+
+  el.edRows.addEventListener('click', function (e) {
+    if (e.target.closest('button, input, select, label')) return;
+    var row = e.target.closest ? e.target.closest('.vb-k7d__edrow') : null;
+    if (!row) return;
+    var first = row.querySelector('input');
+    if (first) first.focus();
+  });
+
+  el.edPane.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var rows = Array.prototype.slice.call(el.edRows.querySelectorAll('.vb-k7d__edrow'));
+    var out = [], bad = false;
+
+    rows.forEach(function (row) {
+      var n = parseInt(edVal(row, 'n').value, 10);
+      var t = edVal(row, 'time').value;
+      var subj = edVal(row, 'subj').value.replace(/^\s+|\s+$/g, '');
+      var dur = parseInt(edVal(row, 'dur').value, 10);
+      if (!(n >= 1 && n <= 12) || !/^\d{1,2}:\d{2}$/.test(t) || !subj || !(dur >= 15 && dur <= 120)) {
+        bad = true;
+        return;
+      }
+      var hm = t.split(':');
+      out.push({
+        n: n,
+        time: pad(+hm[0]) + ':' + hm[1],
+        dur: dur,
+        subj: subj,
+        teacher: edVal(row, 'teacher').value.replace(/^\s+|\s+$/g, '') || '—',
+        room: edVal(row, 'room').value.replace(/^\s+|\s+$/g, '') || '—',
+        cancelled: edVal(row, 'off').checked
+      });
+    });
+
+    if (bad) { el.edErr.hidden = false; return; }
+
+    autoConfig.on = el.autoOn.checked;
+    autoConfig.live = el.autoLive.value.replace(/^\s+|\s+$/g, '') || AUTO_DEFAULT.live;
+    autoConfig.done = el.autoDone.value.replace(/^\s+|\s+$/g, '') || AUTO_DEFAULT.done;
+    autoConfig.next = el.autoNext.value.replace(/^\s+|\s+$/g, '') || AUTO_DEFAULT.next;
+    autoConfig.off = el.autoOff.value.replace(/^\s+|\s+$/g, '') || AUTO_DEFAULT.off;
+    applyAutoToLegend();
+
+    renumber(out);
+    edits[keyOf(clsName(), viewDate())] = out;
+    closeModal();
+    render();
+    editMsg('Расписание ' + clsName() + ' на ' + dayWord(viewDate()) + ' сохранено.');
+  });
+
+  /* ---------- Форма урока ---------- */
+
+  var evCtx = { dateKey: '', idx: -1 };
+
+  function openLessonForm(dateKey, idx) {
+    evCtx = { dateKey: dateKey, idx: idx };
+    var vd = viewDate();
+    var plain = dayPlain(clsName(), vd);
+    var isEdit = idx >= 0 && idx < plain.length;
+    var p = isEdit ? plain[idx] : { n: plain.length + 1, time: '08:30', dur: 45, subj: '', teacher: '', room: '', cancelled: false };
+
+    el.evTitle.textContent = (isEdit ? 'Урок · ' : 'Новый урок · ') + clsName() + ' класс';
+    el.evText.textContent = 'День: ' + dayWord(vd) + '. ' + (isEdit
+      ? 'Измените данные урока — они сразу появятся в расписании.'
+      : 'Заполните данные урока — он появится в расписании.');
+    el.evSubmit.textContent = isEdit ? 'Сохранить' : 'Добавить';
+    el.evDel.hidden = !isEdit;
+    el.evErr.hidden = true;
+
+    el.fNum.value = String(Math.min(Math.max(p.n, 1), 12));
+    el.fTime.value = p.time;
+    el.fSubj.value = p.subj;
+    el.fTeacher.value = p.teacher === '—' ? '' : p.teacher;
+    el.fRoom.value = p.room === '—' ? '' : p.room;
+    el.fDur.value = String(p.dur);
+    el.fStatus.value = p.cancelled ? 'off' : '';
+
+    openModal(el.evPane);
+  }
+
+  function readLessonForm() {
+    var n = parseInt(el.fNum.value, 10);
+    var t = el.fTime.value;
+    var subj = el.fSubj.value.replace(/^\s+|\s+$/g, '');
+    var dur = parseInt(el.fDur.value, 10);
+    if (!(n >= 1 && n <= 12) || !/^\d{1,2}:\d{2}$/.test(t) || !subj || !(dur >= 15 && dur <= 120)) return null;
+    var hm = t.split(':');
+    return {
+      n: n,
+      time: pad(+hm[0]) + ':' + hm[1],
+      dur: dur,
+      subj: subj,
+      teacher: el.fTeacher.value.replace(/^\s+|\s+$/g, '') || '—',
+      room: el.fRoom.value.replace(/^\s+|\s+$/g, '') || '—',
+      cancelled: el.fStatus.value === 'off'
+    };
+  }
+
+  function renumber(arr) {
+    arr.sort(byN);
+    for (var i = 0; i < arr.length; i++) arr[i].n = i + 1;
+  }
+
+  el.evPane.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var p = readLessonForm();
+    if (!p) { el.evErr.hidden = false; return; }
+    var arr = dayPlain(clsName(), viewDate());
+    if (evCtx.idx >= 0 && evCtx.idx < arr.length) arr[evCtx.idx] = p;
+    else arr.push(p);
+    renumber(arr);
+    closeModal();
+    render();
+    editMsg('Урок сохранён в расписании на ' + dayWord(viewDate()) + '.');
+  });
+
+  el.evDel.addEventListener('click', function () {
+    var arr = dayPlain(clsName(), viewDate());
+    if (evCtx.idx < 0 || evCtx.idx >= arr.length) return;
+    var subj = arr[evCtx.idx].subj;
+    if (!window.confirm('Удалить урок «' + subj + '»?')) return;
+    arr.splice(evCtx.idx, 1);
+    renumber(arr);
+    closeModal();
+    render();
+    editMsg('Урок удалён.');
+  });
+
+  /* ---------- Форма обозначения ---------- */
+
+  var legIdx = -1;
+
+  function openLegendForm(idx) {
+    legIdx = idx;
+    var isEdit = idx >= 0 && idx < legend.length;
+    var item = isEdit ? legend[idx] : { t: '', d: '', k: '' };
+    el.legTitle.textContent = isEdit ? 'Обозначение · ' + item.t : 'Новое обозначение';
+    el.lTitle.value = item.t;
+    el.lDescr.value = item.d;
+    el.lColor.value = item.k;
+    el.legDel.hidden = !isEdit;
+    el.legErr.hidden = true;
+    openModal(el.legPane);
+  }
+
+  el.legPane.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var t = el.lTitle.value.replace(/^\s+|\s+$/g, '');
+    var d = el.lDescr.value.replace(/^\s+|\s+$/g, '');
+    if (!t || !d) { el.legErr.hidden = false; return; }
+    var item = { t: t, d: d, k: el.lColor.value };
+    if (legIdx >= 0 && legIdx < legend.length) legend[legIdx] = item;
+    else legend.push(item);
+    closeModal();
+    renderLegend();
+    editMsg('Обозначение сохранено.');
+  });
+
+  el.legDel.addEventListener('click', function () {
+    if (legIdx < 0 || legIdx >= legend.length) return;
+    var t = legend[legIdx].t;
+    if (!window.confirm('Удалить обозначение «' + t + '»?')) return;
+    legend.splice(legIdx, 1);
+    closeModal();
+    renderLegend();
+    editMsg('Обозначение удалено.');
+  });
+
+  /* ---------- Выгрузка и загрузка JSON ---------- */
+
+  var KEY_RE = new RegExp('^([5-9][' + LETTERS.join('') + '])\\|\\d{4}-\\d{2}-\\d{2}$');
+
+  function normalizeLesson(p) {
+    if (!p || typeof p !== 'object') return null;
+    var n = parseInt(p.n, 10);
+    var t = String(p.time || '');
+    if (!(n >= 1 && n <= 12) || !/^\d{1,2}:\d{2}$/.test(t)) return null;
+    var hm = t.split(':');
+    var dur = parseInt(p.dur, 10);
+    if (!(dur >= 15 && dur <= 120)) dur = 45;
+    return {
+      n: n,
+      time: pad(+hm[0]) + ':' + hm[1],
+      dur: dur,
+      subj: String(p.subj || 'Урок').slice(0, 60),
+      teacher: String(p.teacher || '—').slice(0, 60),
+      room: String(p.room || '—').slice(0, 40),
+      cancelled: !!p.cancelled
+    };
+  }
+
+  function exportJson() {
+    var data = {
+      block: 'vb-k7d',
+      version: 3,
+      exported: new Date().toISOString(),
+      classes: GRADES,
+      letters: LETTERS,
+      legend: legend,
+      auto: autoConfig,
+      lessons: edits
+    };
+    var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'raspisanie-' + iso(TODAY) + '.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    editMsg('Файл выгружен. Загрузите его кнопкой «Загрузить JSON», чтобы вернуть правки.');
+  }
+
+  function applyImport(data) {
+    if (!data || typeof data !== 'object') throw new Error('bad');
+    var hasLegend = data.legend != null, hasLessons = data.lessons != null, hasAuto = data.auto != null;
+    if (!hasLegend && !hasLessons && !hasAuto) throw new Error('bad');
+
+    if (hasLegend) {
+      if (!Array.isArray(data.legend)) throw new Error('bad');
+      legend = data.legend
+        .filter(function (x) { return x && typeof x.t === 'string' && typeof x.d === 'string'; })
+        .slice(0, 30)
+        .map(function (x) {
+          var k = ['live', 'done', 'off', ''].indexOf(x.k) >= 0 ? x.k : '';
+          return { t: x.t.slice(0, 40), d: x.d.slice(0, 120), k: k };
+        });
+    }
+    if (hasAuto) {
+      if (typeof data.auto !== 'object' || Array.isArray(data.auto)) throw new Error('bad');
+      autoConfig = {
+        on: data.auto.on !== false,
+        live: String(data.auto.live || AUTO_DEFAULT.live).slice(0, 24) || AUTO_DEFAULT.live,
+        done: String(data.auto.done || AUTO_DEFAULT.done).slice(0, 24) || AUTO_DEFAULT.done,
+        next: String(data.auto.next || AUTO_DEFAULT.next).slice(0, 24) || AUTO_DEFAULT.next,
+        off: String(data.auto.off || AUTO_DEFAULT.off).slice(0, 24) || AUTO_DEFAULT.off
+      };
+    }
+    if (hasLessons) {
+      if (typeof data.lessons !== 'object' || Array.isArray(data.lessons)) throw new Error('bad');
+      var next = {};
+      Object.keys(data.lessons).forEach(function (key) {
+        if (!KEY_RE.test(key)) return;
+        if (!Array.isArray(data.lessons[key])) return;
+        var arr = data.lessons[key].map(normalizeLesson).filter(Boolean);
+        renumber(arr);
+        next[key] = arr;
+      });
+      edits = next;
+    }
+  }
+
+  el.file.addEventListener('change', function () {
+    var file = el.file.files && el.file.files[0];
+    el.file.value = '';
+    if (!file) return;
+    var fr = new FileReader();
+    fr.onload = function () {
+      try {
+        applyImport(JSON.parse(fr.result));
+        render();
+        editMsg('Правки загружены из файла.');
+      } catch (err) {
+        editMsg('Не удалось прочитать файл: нужен JSON, выгруженный этой страницей.');
+      }
+    };
+    fr.onerror = function () { editMsg('Не удалось прочитать файл.'); };
+    fr.readAsText(file);
+  });
+
+  el.editbar.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('[data-eact]') : null;
+    if (!t) return;
+    var a = t.getAttribute('data-eact');
+    if (a === 'editor') { if (auth.loggedIn) openEditor(); }
+    else if (a === 'export') { if (auth.loggedIn) exportJson(); }
+    else if (a === 'import') { if (auth.loggedIn) el.file.click(); }
+    else if (a === 'reset') {
+      if (!auth.loggedIn) return;
+      if (!window.confirm('Сбросить все правки и вернуть исходное расписание?')) return;
+      edits = {};
+      legend = LEGEND_DEFAULT.map(function (x) { return { t: x.t, d: x.d, k: x.k }; });
+      autoConfig = { on: AUTO_DEFAULT.on, live: AUTO_DEFAULT.live, done: AUTO_DEFAULT.done, next: AUTO_DEFAULT.next, off: AUTO_DEFAULT.off };
+      render();
+      editMsg('Правки сброшены.');
+    }
+    else if (a === 'logout') exitEdit();
+  });
+
+  /* ---------- Обработчики ---------- */
+
+  root.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('[data-act]') : null;
+    if (!t) return;
+    var act = t.getAttribute('data-act');
+
+    if (act === 'grade') {
+      var g = parseInt(t.getAttribute('data-grade'), 10);
+      if (GRADES.indexOf(g) < 0 || g === state.grade) return;
+      state.grade = g;
+      render();
+      return;
+    }
+    if (act === 'letter') {
+      var l = t.getAttribute('data-letter');
+      if (LETTERS.indexOf(l) < 0 || l === state.letter) return;
+      state.letter = l;
+      render();
+      return;
+    }
+    if (act === 'day') {
+      var off = parseInt(t.getAttribute('data-off'), 10);
+      if (!(off >= 0 && off <= DAYS_AHEAD) || off === state.dayOffset) return;
+      state.dayOffset = off;
+      render();
+      return;
+    }
+    if (!auth.loggedIn) return;
+
+    var dateKey = t.getAttribute('data-date');
+    var idxAttr = t.getAttribute('data-idx');
+    var idx = idxAttr == null ? -1 : parseInt(idxAttr, 10);
+
+    if (act === 'ev-add') { openLessonForm(keyOf(clsName(), viewDate()), -1); return; }
+    if (act === 'ev-edit') { openLessonForm(dateKey, idx); return; }
+    if (act === 'ev-del') {
+      var arr = dayPlain(clsName(), viewDate());
+      if (idx < 0 || idx >= arr.length) return;
+      if (!window.confirm('Удалить урок «' + arr[idx].subj + '»?')) return;
+      arr.splice(idx, 1);
+      renumber(arr);
+      render();
+      editMsg('Урок удалён.');
+      return;
+    }
+    if (act === 'leg-add') { openLegendForm(-1); return; }
+    if (act === 'leg-edit') { openLegendForm(idx); return; }
+    if (act === 'leg-del') {
+      if (idx < 0 || idx >= legend.length) return;
+      if (!window.confirm('Удалить обозначение «' + legend[idx].t + '»?')) return;
+      legend.splice(idx, 1);
+      renderLegend();
+      editMsg('Обозначение удалено.');
+    }
+  });
+
+  function tick() {
+    el.clock.textContent = 'сейчас ' + fmtTime.format(new Date());
+    if (document.hidden) return;
+    render();
+  }
+
+  /* ---------- Выпадающие списки в форме урока ---------- */
+
+  makeCombo(el.fTime, function (v) { return filterList(SLOT_TIMES, v); });
+  makeCombo(el.fSubj, function (v) { return filterList(SUBJECT_NAMES, v); });
+  makeCombo(el.fTeacher, function (v) { return filterList(teacherPool(el.fSubj.value), v); });
+  makeCombo(el.fRoom, function (v) { return filterList(ALL_ROOMS, v); });
+
+  /* ---------- Старт ---------- */
+
+  readHash();
+  el.clock.textContent = 'сейчас ' + fmtTime.format(new Date());
+  render();
+  window.setInterval(tick, 30000);
+})();
+</script><style data-vb-overrides="true">
+#vb-k7d-title {
+    color: #4d5f57;
+}
+</style>
